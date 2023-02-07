@@ -1,3 +1,5 @@
+package src;
+
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -54,7 +56,7 @@ public class Converter extends Application {
          * output it in the label
          */
         convert.setOnAction(event -> {
-            unitWeight toConvert = new unitWeight(Double.parseDouble(inputToConvert.getText()));
+            UnitWeight toConvert = new UnitWeight(Double.parseDouble(inputToConvert.getText()));
             double converted = toConvert.convert(menu1.getText(), menu2.getText());
             result.setText(String.valueOf(converted));
         });

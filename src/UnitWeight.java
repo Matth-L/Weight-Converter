@@ -1,12 +1,14 @@
-public class unitWeight {
+package src;
+
+public class UnitWeight {
 
     static double value;
 
-    public unitWeight() {
+    public UnitWeight() {
         value = 0;
     }
 
-    public unitWeight(double v) {
+    public UnitWeight(double v) {
         value = v;
     }
 
